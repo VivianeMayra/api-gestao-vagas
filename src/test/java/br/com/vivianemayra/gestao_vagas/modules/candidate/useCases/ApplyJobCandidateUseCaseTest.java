@@ -14,13 +14,14 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import br.com.vivianemayra.gestao_vagas.candidate.CandidateEntity;
+import br.com.vivianemayra.gestao_vagas.candidate.CandidateRepository;
+import br.com.vivianemayra.gestao_vagas.candidate.entity.ApplyJobEntity;
+import br.com.vivianemayra.gestao_vagas.candidate.repository.ApplyJobRepository;
+import br.com.vivianemayra.gestao_vagas.candidate.useCases.ApplyJobCandidateUseCase;
+import br.com.vivianemayra.gestao_vagas.company.entities.JobEntity;
+import br.com.vivianemayra.gestao_vagas.company.repositories.JobRepository;
 import br.com.vivianemayra.gestao_vagas.exceptions.UserNotFoundException;
-import br.com.vivianemayra.gestao_vagas.modules.candidate.CandidateEntity;
-import br.com.vivianemayra.gestao_vagas.modules.candidate.CandidateRepository;
-import br.com.vivianemayra.gestao_vagas.modules.candidate.entity.ApplyJobEntity;
-import br.com.vivianemayra.gestao_vagas.modules.candidate.repository.ApplyJobRepository;
-import br.com.vivianemayra.gestao_vagas.modules.company.entities.JobEntity;
-import br.com.vivianemayra.gestao_vagas.modules.company.repositories.JobRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class ApplyJobCandidateUseCaseTest {
